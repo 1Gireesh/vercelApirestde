@@ -6,6 +6,11 @@ app.use("/", (req, res) => {
   res.json({ message: "Hello From Express App" });
 });
 
+app.post("/",(req,res)=>{
+  res.send(req.body);``
+})
+
+
 app.listen(9000, () => {
   console.log(`Starting Server on Port ${port}`);
 });
